@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "profilePicture": "/images/user-3.png",
+      "headline": "Software Engineer at TechCorp",
+      "connections": 150
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "profilePicture": "/images/user-2.png",
+      "headline": "Freelance Developer",
+      "connections": 200
+    }
+  ]
+  

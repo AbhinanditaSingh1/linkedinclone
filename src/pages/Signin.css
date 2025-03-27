@@ -1,0 +1,130 @@
+.signin-head img {
+    width: 150px; 
+    display: block;
+    margin: 40px auto 20px; 
+}
+
+.signin-head h2 {
+    color: #0077B5;
+    text-align: center;
+    margin: 0 20px 15px; 
+    font-size: 24px; 
+}
+
+.signin-head h3 {
+    color: #0077B5;
+    text-align: center;
+    margin: 0 20px 25px; 
+    font-size: 18px; 
+}
+
+.signin input {
+    padding: 12px;
+    width: 90%; 
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block; 
+    border: 1px solid #ddd;
+}
+
+.signin button {
+    border: 1px solid #0077B5;
+    color: #0077B5;
+    background: white;
+    border-radius: 30px;
+    width: 200px;
+    padding: 12px 0; 
+    margin: 20px auto; 
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signin button:hover {
+    background: #0077B5;
+    color: white;
+}
+.signin > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px; 
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+.signin p {
+    color: #0077B5;
+    font-size: 16px;
+    text-align: center;
+    margin: 0; 
+}
+
+.signin a {
+    color: #0077B5;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    display: inline; 
+}
+
+@media (min-width: 768px) {
+    .signin-head img {
+        width: 180px;
+        margin-top: 60px;
+    }
+
+    .signin-head h2 {
+        font-size: 28px;
+    }
+
+    .signin-head h3 {
+        font-size: 20px;
+    }
+
+    .signin input {
+        width: 70%;
+    }
+
+    .signin > div:last-child {
+        gap: 6px; 
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .signin-head img {
+        width: 200px;
+        margin-top: 80px;
+    }
+
+    .signin-head h2 {
+        font-size: 32px;
+        margin-right: 0;
+    }
+
+    .signin-head h3 {
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .signin input {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signin button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signin > div:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

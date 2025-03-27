@@ -1,0 +1,143 @@
+.join {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.join-loginlogo {
+    width: 200px;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.join h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #0077B5;
+    margin-bottom: 20px;
+}
+
+.join-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+    margin: 0 auto 30px;
+}
+
+.join p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0077B5;
+    margin: 0;
+}
+
+.join a {
+    margin: 0;
+    color: #0077B5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join input {
+    padding: 12px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.join button {
+    border: 1px solid #0077B5;
+    border-radius: 30px;
+    width: 250px;
+    padding: 12px 0;
+    margin: 20px auto 0;
+    display: block;
+    background: white;
+    color: #0077B5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join button:hover {
+    background: #0077B5;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .join {
+        width: 80%;
+        padding: 0 20px;
+        top: 80px;
+    }
+
+    .join-loginlogo {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .join h2 {
+        font-size: 32px;
+    }
+
+    .join p,
+    .join a {
+        font-size: 16px;
+    }
+
+    .join-bottom {
+        margin-bottom: 20px;
+    }
+
+    .join input {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .join {
+        width: 95%;
+        top: 40px;
+        position: relative;
+        margin: 40px auto;
+        transform: none;
+        left: auto;
+    }
+
+    .join-loginlogo {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .join h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .join-bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+        margin-bottom: 15px;
+    }
+
+    .join p,
+    .join a {
+        font-size: 14px;
+        display: inline;
+    }
+
+    .join button {
+        width: 100%;
+        max-width: 280px;
+        margin: 15px auto;
+    }
+}

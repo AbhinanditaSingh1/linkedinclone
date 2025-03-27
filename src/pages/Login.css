@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw; 
+    margin-bottom: 4vw;
+}
+
+.loginlogo {
+    width: 12vw; 
+    display: block;
+    margin-left: auto;  
+    margin-right: 30vw;
+}
+
+.login-join, .login-signin {
+    display: inline-block;
+    border: 1px solid #045be6;
+    border-radius: 30px;
+    padding: 0.5vw 2vw;
+    color: #045be6;
+    font-weight: 100;
+    font-size: 1vw;
+    cursor: pointer;
+    margin: 1vw; 
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-left {
+    padding: 1vw;
+    color: #0077B5;
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginhero {
+    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1024px) {
+    .header {
+        padding: 3vw;
+        margin-bottom: 6vw;
+    }
+
+    .loginlogo {
+        width: 18vw;
+        margin-right: 20vw;
+    }
+
+    .login-join, 
+    .login-signin {
+        padding: 1vw 3vw;
+        font-size: 1.8vw;
+        margin: 1.5vw;
+    }
+
+    .body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .login-left {
+        font-size: 4vw;
+        margin: 4vw 0;
+        padding: 0 8vw;
+    }
+
+    .loginhero {
+        width: 50vw;
+        margin-top: 4vw;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        padding: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .loginlogo {
+        width: 40vw;
+        margin: 0 auto 5vw auto; 
+    }
+
+    .login-join, 
+    .login-signin {
+        padding: 2vw 6vw;
+        font-size: 3.5vw;
+        margin: 2vw;
+        min-width: 120px; 
+    }
+
+    .login-left {
+        font-size: 6vw;
+        margin: 5vw 0;
+        padding: 0 5vw;
+    }
+
+    .loginhero {
+        width: 80vw;
+        margin-top: 5vw;
+    }
+
+    .header > div:last-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

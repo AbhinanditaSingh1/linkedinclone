@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "company": "Microsoft",
+      "title": "Frontend Developer",
+      "location": "California, USA",
+      "logo": "/images/microsoft.png"
+    },
+    {
+        "id": 2,
+        "company": "Google",
+        "title": "Frontend Developer",
+        "location": "California, USA",
+        "logo": "/images/google.png"
+    },
+    {
+        "id": 3,
+        "company": "Stanford Institute",
+        "title": "Frontend Developer",
+        "location": "California, USA",
+        "logo": "/images/stanford.png"
+    }
+]
+  

@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "user": {
+        "name": "Sriya",
+        "jobTitle": "Software Developer",
+        "profilePicture": "/images/user-2.png"
+      },
+      "content": "Excited to start a new journey in React development!",
+      "image": "/images/post-image-1.png",
+      "likes": 10
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "Sriya",
+        "jobTitle": "Software Developer",
+        "profilePicture": "/images/user-3.png"
+      },
+      "content": "Excited to start a new journey in React development!",
+      "image": "/images/post-image-2.png",
+      "likes": 10
+    },
+    {
+        "id": 3,
+        "user": {
+          "name": "Sriya",
+          "jobTitle": "Software Developer",
+          "profilePicture": "/images/user-4.png"
+        },
+        "content": "Excited to start a new journey in React development!",
+        "image": "/images/post-image-3.png",
+        "likes": 10
+      }
+] 

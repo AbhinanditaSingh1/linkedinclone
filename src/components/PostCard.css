@@ -1,0 +1,81 @@
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user small {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+
+.post-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+button:hover{
+    background-color: #ccc;
+}
+
+button img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+button:focus {
+    outline: none;
+}

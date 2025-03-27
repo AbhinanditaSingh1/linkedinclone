@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2px 2%; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 35px; 
+    margin-right: 20px;
+    margin-left: 70px;
+    display: block;
+}
+
+.navbar-center ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar-center ul li a { 
+    display: flex;
+    align-items: center;
+    font-size: 15px; 
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 3px 6px;
+    padding-right: 4px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.navbar-center ul li img {
+    width: 30px; 
+}
+
+.navbar-center ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #0077B5;
+    position: absolute;
+    top: 58px;
+    transition: width 0.3s;
+}
+
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after {
+    width: 100%;
+}
+
+.nav-profile-img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 12px;
+    background: #41db51;
+    position: absolute;
+}
+
+.search {
+    background-color: #eef1f4;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    margin-left: 10px;
+    width: 24px;
+}
+
+.search input {
+    width: 100px;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 2px 3%; 
+    }
+
+    .logo {
+        width: 30px;
+        margin-left: 30px;
+    }
+
+    .navbar-center ul li a {
+        font-size: 13px;
+        margin: 3px 4px; 
+        padding-top: 8px;
+    }
+
+    .navbar-center ul li img {
+        width: 25px; 
+    }
+
+    .navbar-center ul li a::after {
+        top: 48px; 
+    }
+
+    .search {
+        width: 200px;
+    }
+
+    .search input {
+        width: 80px;
+        padding: 6px;
+    }
+
+    .nav-profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .online::after {
+        width: 12px;
+        height: 12px;
+        right: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .navbar {
+        padding: 6px 10px; 
+        flex-wrap: wrap;
+    }
+
+    .navbar-left {
+        order: 1;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .logo {
+        width: 28px;
+        margin-left: 5px;
+    }
+
+    .navbar-center {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 5px 0;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .navbar-center ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-center ul li a {
+        font-size: 13px;
+        margin: 0 4px;
+        padding: 5px 0;
+    }
+
+    .navbar-center ul li a::after {
+        top: 35px;
+        height: 1.5px;
+    }
+
+    .navbar-center ul li img {
+        width: 25px;
+    }
+
+    .search {
+        width: 180px; 
+        padding: 0 10px;
+        margin-right: 5px;
+    }
+
+    .search input {
+        width: 80px;
+        padding: 6px;
+    }
+
+    .nav-profile-img {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+
+    .online::after {
+        width: 10px;
+        height: 10px;
+        right: 6px;
+        bottom: 2px;
+    }
+    .navbar-center ul li:nth-child(n+5) {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar-center {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar-center.open {
+        display: flex;
+    }
+
+    .navbar-center ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-center ul li {
+        margin: 10px 0;
+    }
+
+    .navbar-center ul li a {
+        font-size: 14px;
+    }
+}
